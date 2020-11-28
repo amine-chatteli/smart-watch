@@ -5,35 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="#home" id="navbar__logo">COLOR</a>
-            <div class="navbar__togle" id="mobile-menu">
-                <span class="bar"></span><span class="bar"></span>
-                <span class="bar"></span>
+    <div class="hero">
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="#home" id="navbar__logo">
+                    <img src="./images/Space.svg" alt="logo">
+                </a>
+                <div class="navbar__togle" id="mobile-menu">
+                    <span class="bar"></span><span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#home" class="navbar__links" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#templates" class="navbar__links" id="templates-page">Templates</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#price" class="navbar__links" id="price-page">Price</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#help" class="navbar__links" id="help-page">Help</a>
+                    </li>
+                    <li class="navbar__button">
+                        <a href="#get-in-touch" class="button" id="get-in-touch-nav">Get in touch</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="#home" class="navbar__links" id="home-page">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#about" class="navbar__links" id="about-page">About</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#services" class="navbar__links" id="services-page">Services</a>
-                </li>
-                <li class="navbar__button">
-                    <a href="#sign-up" class="button" id="signup">Sign up</a>
-                </li>
-            </ul>
+        </nav>
+        <div class="description">
+            <div class="left__box">
+                <div class="title">
+                        <p>DESIGN INSPIRATION</p>
+                        <h1>Convallis turpis erat tempus, viverra aliquet. </h1>
+                        <a href="#get-in-touch" class="button primary" id="get-in-touch-hero">Get in touch</a>
+                </div>
+                <div class="review">
+                    <p>I feel so much less stressed ❤️ as I now know by the book.”</p>
+                    <div class="review__author">
+                        <img class="review__author__image" src="./images/ford.svg" alt="review author">
+                        <div class="review__author__info">
+                            <h3>Andry Ford</h3>
+                            <h4>CEO at whatever</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right__box">
+                <div class="slider">
+                    <div class="slider__loader">loader here--------------------</div>
+                    <div class="slider__body">
+                        <img src="./images/Body.png" alt="">
+                    </div>
+                    <i class="fas fa-arrow-left"></i>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
         </div>
-    </nav>
-
+    </div>
 
     <script src="/js/main.js"></script>
 </body>
