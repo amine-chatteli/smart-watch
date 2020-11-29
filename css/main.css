@@ -14,12 +14,14 @@ h2{
 h3{
     color: #23242A;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  
 }
 h4{
     color: #23242A;
-    font-weight: 500;
-    font-size: 1rem;
+    font-weight: 600;
+    font-size: 1.3rem;
 }
 .primary{
     background: #0E6FFF;
@@ -29,6 +31,11 @@ h4{
     color:white;
     text-align: center;
     font-size: 1.5rem;
+    font-weight: 600;
+}
+a{
+    color: #0E6FFF;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -222,7 +229,12 @@ nav{
 
 /*----------------------------- info ---------------------------*/
 .info__section{
-    background: linear-gradient(to bottom,#FFFFFF 50%, #D8F6FF 50%);
+    background: linear-gradient(to bottom,   
+    #FFFFFF 0%,
+    #FFFFFF 25%,
+    #D8F6FF 25%,
+    #D8F6FF 0%);
+    padding-bottom: 30px;
 }
 .info__first__container{
     width: 70%;
@@ -248,33 +260,142 @@ nav{
 }
 
 .info__box__description{
-   
     margin-left: 10%;
-    height: 250px;
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-bottom: 50px;
-
+    padding-bottom: 5%;
+    margin-bottom: 5%;
 }
 .info__box__description p{
     font-size: 1.2rem;
+    
 }
 .info__second__container{
-    width: 70%;
+    width: 50%;
     margin: 50px auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .second__box__description{
-    width: 45%;
+    width: 60%;
+    height: 300px;
     display: flex;
     flex-direction: column;
-   
+    justify-content: space-around;
+   padding: 30px;
 }
 .info__second__container img{
+    width: 45%;
+}
+/**********  slider section *****/
+
+.carousel__slider{
+    text-align: center;
+    padding-top: 7%;
+}
+
+.cards__container{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.card{
+    width: 22%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px 25px;
+    text-align: left; 
+    box-shadow: 10px 10px 50px 3px rgba(39, 92, 141, 0.1);
+}
+
+ .other{
+  bottom: 20px;
+  position: relative;
+  float: left;
+  margin-left: 50px;
+  width: 30px;
+  height: 30px;
+}
+
+.other:hover{
+    color: blue;
+    transition: ease-in .32s;
+   
+}
+/**********  text section *****/
+
+.text__section{
+    border-radius: 30px;
+    background-image: url('/images/Bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80%;
+    margin: 40px auto;
+    padding: 50px;
+}
+.text__container__one{
+    width: 70%;
+    padding-right: 10%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    margin-left: 60px;
+}
+.text__container__two{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+}
+
+.text__box__small{
     width: 40%;
+    margin: 40px;
+    padding: 20px;
+}
+.icon__title{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    right: 50px;
+   
+}
+.icon__title h3{
+    padding-top: 10px;
+}
+
+.mini__slider{
+   
+    margin: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
+}
+.mini__slider__title{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.larger__card{
+    width: 30%;
+    height: 300px;
+    padding-bottom: 100px;
 }
