@@ -38,7 +38,10 @@ a{
     font-size: 1.2rem;
     font-weight: 600;
 }
-
+p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
 /*----------hero---------------*/
 .hero{
     width: 100%;
@@ -51,6 +54,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .navbar__container{
     width: 95%;
@@ -58,6 +62,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+   
 }
 .navbar__menu{
     display: flex;
@@ -65,6 +70,7 @@ nav{
     justify-content: space-between;
     width: 40%;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .navbar__item{
@@ -108,11 +114,10 @@ nav{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .left__box{
-  
-  
-    width: 65%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,15 +126,17 @@ nav{
 }
 .title{
     box-sizing: border-box;
-    padding: 25px 0;
-    width: 55%;
-    height: 80%;
+    padding-left: 22%;
+    width: 100%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    padding-bottom: 15%;
+    margin-bottom: 5%;
 }
+
+
 .title p{
     font-weight: 500;
     font-size: 1.4rem;
@@ -149,12 +156,13 @@ nav{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    color: #23242A
-    ;
+    color: #23242A;
+    margin-bottom: 70px;
 }
 .review p{
     font-size: 1.8rem;
     font-weight: 550 ;
+    margin-bottom: 50px;
 }
 .review__author{
     display: flex;
@@ -167,12 +175,15 @@ nav{
 
 .right__box{
     width: 45%;
-    height: 700px;
+    min-width: 300px;
+   
 }
 .right__box img{
     width: 100%;
-    height: 700px;
+   
 }
+
+
 .slider{
     position: relative;
 }
@@ -234,7 +245,7 @@ nav{
     #FFFFFF 25%,
     #D8F6FF 25%,
     #D8F6FF 0%);
-    padding-bottom: 30px;
+    padding-bottom: 10%;
 }
 .info__first__container{
     width: 70%;
@@ -243,16 +254,23 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;   
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
 
 }
 .info__box__left{
     width: 30%;
+    padding-top: 10%;
 }
+
+
 .info__box__left img{
     width: 100%;
 }
 .info__box__right{
     width: 68%;
+
 }
 .info__box__right img{
     width: 100%;
@@ -260,35 +278,41 @@ nav{
 }
 
 .info__box__description{
-    margin-left: 10%;
-    width: 90%;
+    margin:5% ;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding-bottom: 5%;
-    margin-bottom: 5%;
+   
+    
 }
 .info__box__description p{
     font-size: 1.2rem;
     
 }
 .info__second__container{
-    width: 50%;
-    margin: 50px auto;
+    box-sizing: border-box;
+    width: 70%;
+    margin: 2% auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around; 
+   
 }
 .second__box__description{
-    width: 60%;
-    height: 300px;
+   width:60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-   padding: 30px;
+    margin: 10%;
+}
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
 }
 .info__second__container img{
-    width: 45%;
+    width: 300px;
+    height: 300px;
 }
 /**********  slider section *****/
 
@@ -303,15 +327,17 @@ nav{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 50px;
+    padding-bottom: 10%;
+    flex-wrap: wrap;
 }
 .card{
-    width: 22%;
+    width: 250px;
     height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 40px 25px;
+    margin: 3% auto;
     text-align: left; 
     box-shadow: 10px 10px 50px 3px rgba(39, 92, 141, 0.1);
 }
@@ -328,29 +354,28 @@ nav{
 .other:hover{
     color: blue;
     transition: ease-in .32s;
+    cursor: pointer;
    
 }
-/**********  text section *****/
+/**********  text section ******************/
 
 .text__section{
     border-radius: 30px;
     background-image: url('/images/Bg.svg');
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 80%;
-    margin: 40px auto;
-    padding: 50px;
+    background-size: cover;
+    width: 90%;
+    margin: 5% auto;
+    padding: 5%;
 }
 .text__container__one{
     width: 70%;
-    padding-right: 10%;
-    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    margin-bottom: 5%;
-    margin-left: 60px;
+    margin: 5%;
+  
 }
 .text__container__two{
     display: flex;
@@ -365,37 +390,227 @@ nav{
     padding: 20px;
 }
 .icon__title{
-    width: 65%;
+    width: 55%;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     position: relative;
-    right: 50px;
-   
+    right: 75px;
 }
-.icon__title h3{
-    padding-top: 10px;
-}
+
 
 .mini__slider{
    
     margin: auto;
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 .mini__slider__title{
     margin: auto;
-    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.cards__container__large{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   margin: 10% auto     ;
+}
+.larger__card{
+    width: 300px;
+    height: 300px;
+    padding-bottom: 100px;
+  
+}
+
+/***************** image cards****************/
+
+.image__cards__section{
+    text-align: center;
+    line-height: 80px;
+    margin-bottom: 10%;
+}
+
+.image__cards__container{
+      width: 80%;
+    margin:  auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image__card{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.image__card img{
+    width: 100%;
+}
+
+.image__card h3{
+   padding-top: 10%;
+   margin-bottom: 0;
+}
+
+/****** review section ****************/
+
+.review__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.simple__card{
+    width:80%;
+    margin: 100px auto;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 7%;
+    background-image: url('../images/Group\ 504.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.simple__card__text{
+    width: 60%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/****** footer section ****************/
+.footer{
+    background-color: #23242A;
+    color: gray;
+  
+}
+.footer__container{
+    padding: 5%;
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 0;
+    height: 80%;
+}
+.footer__logo{
+    width: 40%;
+}
+.footer__logo img{
+   z-index: 1;
+}
+
+.footer__nav{
+    width: 50%;
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    list-style: none;
+  
 }
-.larger__card{
-    width: 30%;
-    height: 300px;
-    padding-bottom: 100px;
+
+.main__menu{
+  list-style: none;
+  color: white;
+  margin-bottom: 20%;
+}
+
+.menu__title{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+.copyrights{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    color: grey;
+}
+
+@media screen and (max-width:900px){
+    .info__box__right{
+            width: 100%;
+    }
+    .info__box__left{
+        width: 100%;
+    }
+    .info__box__left img{
+        width: 70%;
+        margin: 15%;
+    }
+    .info__box__description h2{
+        font-size: 2.5rem;
+    }
+
+    .info__second__container{
+        flex-wrap: wrap;
+    }
+    .second__box__description{
+        width: 100%;
+    }
+}
+@media screen and (max-width:1000px){
+    .text__box__small{
+        width: 100%;
+    }
+    .title h1{
+        font-size: 3rem;
+    
+    }
+   
+}
+
+@media screen and (max-width:700px){
+    .left__box{
+        width: 100%;
+    }
+    .right__box{
+       padding-top: 40%;
+        margin: auto;
+        width: 70%;
+    }
+    .info__box__description h2{
+        font-size: 2rem;
+    }
+    .info__box__description {
+       margin: auto;
+       padding: auto;
+    }
+    .info__box__left{
+        width: 100%;
+        margin: auto;
+        padding: auto;
+    }
+
+    .info__box__right{
+        width: 100%;
+
+    }
+    .info__first__container{
+        width:100%;
+    }
 }
