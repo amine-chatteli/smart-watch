@@ -1,6 +1,6 @@
 
 
-const SliderImages = ['../images/body.png','../images/body.png'];
+const SliderImages = ['./images/body.png','./images/body.png'];
 let counter = 0;
 let sliderImage = document.getElementById('slider-img')
 sliderImage.src = SliderImages[counter]
