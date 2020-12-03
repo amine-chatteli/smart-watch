@@ -4,6 +4,9 @@
     font-family: Helvatica ,sans-serif;
     box-sizing: border-box;
 }   
+body{
+    position: relative;
+}
 
 h2{
     color: #23242A;
@@ -48,12 +51,14 @@ p{
     padding-top: 30px;
     padding-bottom: 70px;
     background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FFF4D4;
+   
 }
 
 nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 8%;
     
 }
 .navbar__container{
@@ -105,11 +110,69 @@ nav{
 
 
 .navbar__togle{
-    background-color: black;
-    height: 50px;
-    width: 1px;
+   padding: 1px;
+    height: 25px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
 }
+.navbar__togle .bar{
+    width: 100%;
+    height: 3px;
+    background-color: grey;
+    
+}
+/***************** mobile navbar ***************************/
+.mobile__navbar{
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f6dad0;
+  overflow-y: hidden;
+  transition: 0.5s;
+  opacity: .95;
+}
+.mobile__navbar__menu{
+    position: relative;
+    top: 15%;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+.mobile__menu__navbar__item{
+    color:gray;
+    margin: auto;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.close__btn {
+    color: gray;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 
+  }
+  .close__btn:hover{
+      color: black;
+  }
+
+  .mobile__navbar__menu li:hover{
+      color: black;
+  }
+/***************** end of mobile navbar **********************/
 .description{
     margin-top: 5%;
     display: flex;
@@ -180,7 +243,6 @@ nav{
 }
 .right__box img{
     width: 100%;
-   
 }
 
 
@@ -224,19 +286,13 @@ nav{
     flex-direction: row;
     justify-content: space-between;
 }
-.one{
-    background-color: #FFB19D; 
+.loader{
     width: 33.33%;
     height: 6px;
 }
-.two{
-    width: 33.33%;
-    height: 6px;
-}
-.three{
-    width: 33.33%;
-    height: 6px;
-}
+
+
+
 
 /*----------------------------- info ---------------------------*/
 .info__section{
@@ -612,5 +668,11 @@ nav{
     }
     .info__first__container{
         width:100%;
+    }
+    .navbar__menu{
+        display: none;
+    }
+    .navbar__togle{
+        display: flex;
     }
 }

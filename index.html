@@ -13,6 +13,18 @@
 
 <body>
     <!--------------------hero section ---------------------->
+
+    <div class="mobile__navbar">
+        <a href="" class="close__btn">&times;</a>
+        <ul class="mobile__navbar__menu">
+            <li class="mobile__menu__navbar__item">Home</li>
+            <li class="mobile__menu__navbar__item">Template</li>
+            <li class="mobile__menu__navbar__item">Price</li>
+            <li class="mobile__menu__navbar__item">Help</li>
+            <li class="mobile__menu__navbar__item">get in touch</li>
+
+        </ul>
+    </div>
     <div class="hero">
 
         <!------navbar------>
@@ -22,8 +34,9 @@
                     <img src="./images/Space.svg" alt="logo">
                 </a>
                 <div class="navbar__togle" id="mobile-menu">
-                    <span class="bar"></span><span class="bar"></span>
-                    <span class="bar"></span>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
                 <ul class="navbar__menu">
                     <li class="navbar__item">
@@ -67,16 +80,16 @@
             <div class="right__box">
                 <div class="slider">
                     <div class="slider__loader">
-                        <div class="loader one"></div>
-                        <div class="loader two"></div>
-                        <div class="loader three"></div>
+                        <div id="loader0" class="loader"></div>
+                        <div id="loader1" class="loader"></div>
+                        <div id="loader2" class="loader"></div>
                     </div>
                     <div class="slider__body">
-                        <img src="./images/Body.png" alt="">
+                        <img id="slider-img" src="" alt="">
                     </div>
                     <div class="slider__icons">
-                        <i class="fas fa-arrow-left"></i>
-                        <i class="fas fa-arrow-right"></i>
+                        <i id="prev" class="fas fa-arrow-left"></i>
+                        <i id="next" class="fas fa-arrow-right"></i>
                     </div>
                 </div>
             </div>
@@ -120,7 +133,7 @@
                 </p>
                 <a href="">Experienced team</a>
             </div>
-           
+
 
         </div>
     </div>
@@ -332,7 +345,7 @@
                     </ul>
                 </li>
             </ul>
-           
+
         </div>
         <hr>
         <div class="copyrights">
