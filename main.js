@@ -1,4 +1,6 @@
-const SliderImages = ["./images/Body.png", "./images/Body.png", "./images/Body.png"];
+
+
+const SliderImages = ['../images/body.png','../images/body.png'];
 let counter = 0;
 let sliderImage = document.getElementById('slider-img')
 sliderImage.src = SliderImages[counter]
@@ -32,4 +34,5 @@ document.getElementsByClassName('navbar__togle')[0].addEventListener('click',fun
 
 document.getElementsByClassName('close__btn')[0].addEventListener('click',function(){
     document.getElementsByClassName('mobile__navbar')[0].style.height='0%'
+
 })
